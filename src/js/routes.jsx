@@ -18,12 +18,9 @@ const HeaderWithRouter = withRouter(props => <Header {...props} />);
 
 module.exports = (
   <div className="container">
-    <HeaderWithRouter />
-    <hr />
     <div className="container__content">
       <Switch>
         <Route exact path="/" component={ExampleRouteHandler} />
-        <Route path="/page" component={JustAnotherPage} />
         <Route path="*" component={ExampleRouteHandler} />
       </Switch>
     </div>

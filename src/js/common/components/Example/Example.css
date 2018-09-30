@@ -1,26 +1,55 @@
-@import "../../../../style/configs/color";
+.home-container {
+    margin: -10px;
+    flex: 1;
+    .header {
+        text-align: center;
+        .name {
+            vertical-align: middle;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 27px;
+            font-weight: 300;
+            color: #311e3e;
+        }
+        line-height: 100px;
+        height: 100px;
+        box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.3);
+    }
+    .contents {
+        min-height: 550px;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 60px;
+        padding-bottom: 80px;
+        .description {
+            display: inline-block;
+                width: 54%;
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 150;
+                min-width: 200px;
+        }
+        .icon {
+            margin: 30px;
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
+            display: inline-block;
+        }
+        .seprator {
+            width: 80px;
+            border-bottom: 1px black solid;
+            margin-top: 30px;
+            display: inline-block
+        }
+    }
+    .footer {
+        line-height: 100px;
+        height: 100px;
+        text-align: center;
+        background-color: #efefef;
+        .name {
 
-/* Example handler
- ---------------------- */
- .exampleOutput {
-   padding: 20px 60px 60px;
-   border-radius: 6px;
-   margin-bottom: 30px;
-   color: inherit;
-   background-color: #eee;
-
-   h1 {
-     font-size: 50px;
-     .emphasize {
-       font-size: 1.5em;
-       font-weight: bold;
-       @if 3 < 5 {
-    		 color: $color-title;
-       }
-       @else {
-      	 color: blue;
-       }
-     }
-   }
-
- }
+        }
+    }
+}

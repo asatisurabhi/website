@@ -24,8 +24,8 @@
   },
   "html": [
     {
-			"name": "homepage",
-      "title": "Everything is Awesome",
+      "name": "homepage",
+      "title": "Surabi Asati",
       "template": "_default.html",
       "filename": "index.html"
     }

@@ -6,7 +6,6 @@ import Loadable from 'react-loadable';
 import LazyLoading from '../../common/components/LazyLoading/LazyLoading'
 import { actions as exampleActions } from '../../redux/modules/example';
 import { exampleSelector } from '../../redux/selectors/exampleSelector';
-import { ExampleWithError } from '../../common/components/Example';
 import { ErrorBoundary } from '../../common/components/Utilities';
 
 require('../../../style/index.css');
@@ -38,9 +37,6 @@ class ExampleView extends Component {
     return (
       <Fragment>
         <LazyExample {...this.props} />
-        <ErrorBoundary>
-          <ExampleWithError {...this.props} />
-        </ErrorBoundary>
       </Fragment>
     )
   }

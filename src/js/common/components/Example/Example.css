@@ -23,11 +23,12 @@
         padding-bottom: 80px;
         .description {
             display: inline-block;
-                width: 54%;
-                font-size: 20px;
-                line-height: 30px;
-                font-weight: 150;
-                min-width: 200px;
+            width: 54%;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 150;
+            min-width: 200px;
+            color: grey;
         }
         .icon {
             margin: 30px;
@@ -38,9 +39,47 @@
         }
         .seprator {
             width: 80px;
-            border-bottom: 1px black solid;
+            border-bottom: 1px grey solid;
             margin-top: 30px;
             display: inline-block
+        }
+        .links-container {
+            margin-top: 30px;
+            .links-wrap {
+                width: 50px;
+                height: 50px;
+                vertical-align: middle;
+                display: inline-block;
+            }
+            .link {
+                padding: 15px;
+                color: grey;
+                font-size: 20px;
+                :hover {
+                    transition: all .2s ease-in-out;
+                    font-size: 28px;
+                }
+            }
+            .linkedIn {
+                :hover {
+                    color: #006097;
+                }
+            }
+            .email {
+                :hover {
+                    color: #d93025;
+                }
+            }
+            .github {
+                :hover {
+                    color: black;
+                }
+            }
+            .twitter {
+                :hover {
+                    color: #006dbf;
+                }
+            }
         }
     }
     .footer {

@@ -3,6 +3,11 @@ import Contact from '../Contact';
 
 import './Example.css';
 import ContactImg from './main-image.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 class Example extends PureComponent {
   render() {
@@ -26,8 +31,27 @@ class Example extends PureComponent {
                 <div>
                     <span className="seprator"/>
                 </div>
-                <div className="links">
-                    <span className=""/>
+                <div className="links-container">
+                    <span class="links-wrap">
+                         <a className="link email" href="mailto:asati.surabhi@gmail.com">
+                            <FontAwesomeIcon icon={faEnvelope} />
+                         </a>
+                     </span>
+                     <span class="links-wrap">
+                         <a className="link linkedIn" target="_blank" href="https://www.linkedin.com/in/surabhiasati/">
+                            <FontAwesomeIcon icon={faLinkedin} />
+                         </a>
+                     </span>
+                     <span class="links-wrap">
+                         <a className="link github" target="_blank" href="https://github.com/asatisurabhi/projects">
+                            <FontAwesomeIcon icon={faGithub} />
+                         </a>
+                     </span>
+                     <span class="links-wrap">
+                         <a className="link twitter" target="_blank" href="https://twitter.com/surabhiasati">
+                            <FontAwesomeIcon icon={faTwitter} />
+                         </a>
+                     </span>
                 </div>
             </div>
         </div>
